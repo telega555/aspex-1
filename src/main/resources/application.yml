@@ -1,0 +1,17 @@
+server:
+  port: 8099
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/aspex
+    username: postgres
+    password: 1234
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+    hibernate:
+      ddl-auto: update
+
+app:
+  jwt-secret: dbf13d75f25d1afcd55d268848575ae4bcd3b79d1e542b3f29ed46b5591eb2be
+  jwt-expiration-milliseconds: 3600000
